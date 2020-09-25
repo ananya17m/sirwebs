@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BIDEAL: Biclustering ToolBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Graphical toolbox for Biclustering analysis">
+    <meta name="author" content="NKV">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- add google analytics later -->
+	
+  </head>
+
+  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49015249-1', 'iitk.ac.in');
+  ga('send', 'pageview');
+
+</script>       <!-- Navbar Starts ================================================== -->
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> 
+				<a class="brand" href="../index.html"><font style="font-family:Times New Roman"><i class="fa fa-home"></i> HOME</a>
+				<a class="brand" href="../index1.html"><font style="font-family:Times New Roman">IDEA Lab</a>
+                <div class="nav-collapse collapse" id="main-menu">
+                    <ul class="nav" id="main-menu-left">
+                        <li>
+                            <a href="../people.html">People</a>
+                        </li>
+						<li class="dropdown" id="preview-menu">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Publications<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+							  <li><a target="_blank" href="../Booksedited.html">Books Edited and Book Chapters</a></li>
+							  <li><a target="_blank" href="../publications.html">Patents, Journals, and Conferences</a></li>
+							</ul>
+						</li>	
+                        <li>
+                            <a href="../projects.html">Projects</a>
+                        </li>
+                        <li class="dropdown" id="preview-menu">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Softwares<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+								<li><a href="../mtba/" target="_blank">MTBA: MATLAB Toolbox for Biclustering Analysis</a></li>
+								<li><a href="../finder/" target="_blank">Sensitive Position Finder</a></li>
+								<li><a target="_blank" href="../selfoptimalclustering/">Self Optimal Clustering</a></li>
+                            </ul>
+                        </li>
+						<li><a href="../datasets/index.html">Datasets Repository</a></li>
+						<li><a href="../teaching.html">Teaching</a></li>
+						<li><a href="../gallery.html">Gallery</a></li>
+                    </ul>
+                    <!-- <ul class="nav pull-right" id="main-menu-right">
+                        <!-- <li><a href="./contact.php">Contact Us</a></li> -->
+                        <!-- <li>
+                            <form action="http://www.google.com/search" class=
+                            "navbar-search pull-right" method="get">
+                                <input name="sitesearch" type="hidden" value=
+                                "http://iitk.ac.in/idea/"> <input class=
+                                "search-query span2" name="q" placeholder=
+                                "Search" type="text">
+                            </form>
+                        </li> -->
+                    <!-- </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Ends  ================================================== -->
+
+    <div class="container">
+      <br><br><br>
+      <div class="row">
+        <div class="span3 sidebar">
+          <!--Sidebar content-->
+          <!-- class="nav nav-tabs nav-stacked mysidebar" -->
+                      <ul class="nav nav-list" data-spy="affix">
+            <li class="nav-header"><font style="font-family:Times New Roman" size="4" color="#000000">BIDEAL</font></li>
+			<li><a href="./index.html" target="blank">About</a></li>
+		    <li><a href="./install.html" target="blank">Download and Installation Guide</a></li>
+			<li><a href="./manual.html" target="blank">Manual</a></li>
+			<li><a href="./tutorial.html" target="blank">Tutorial</a></li>
+		    <li><a href="./license.html" target="blank">License</a></li>
+			<li><a href="./publication.html" target="blank">Relevant Publications</a></li>
+			<li><a href="./contact.html" target="blank">Contact Information</a></li>
+			<li><a href="BIDEALDETAILEDUSERGUIDE.pdf" target="blank"><mark>BIDEAL Detailed User Guide</mark> </a></li>
+                        <li><a href="BIDEAL_SupplementryMaterial.pdf" target="blank"><mark>Supplementry Material</mark> </a></li>
+
+
+			
+          </ul>
+        </div>
+        <div class="span9">
+          <!--Body content-->
+          <section id="get">
+            <div class="page-header">
+              <h2>About BIDEAL</h2>
+            </div>
+            <h3>Introduction</h3>
+            <p align="justify">BIDEAL is a unified interactive application that allows researchers to use forefront Biclustering algorithms with graphical interface. BIDEAL also facilitates preprocessing of data which includes removing NaN spots, binarization, discretization and normalization. It allows user to visualize and interpret the result using HeatMap, Gene Profile Map and Cluster Plot. Furthermore, it also provides six Bicluster quality indices for Bicluster validation.</p>
+            <h3>Key Features</h3>
+            <blockquote>
+			  	<li class="nav-listnew"><h4>Preprocessing</h4></li>
+				  <p align="justify" style="font-size:100%;">In our Toolbox there is an option for filtering out the NaN spots in the gene expression data. Data can be binarize (i.e. Can be converted to only 0s and 1s) with respect to any threshold value. BIDEAL Toolbox has the option to binarize the dataset with respect to their median value. Normalization is an important step that can be done over genes and conditions independently or simultaneously.</p><br>
+				<li><h4>Biclustering</h4></li>
+				  <p align="justify" style="font-size:100%;"> BIDEAL facillitates user to opt following state-of-art algorithms for Bicluster formation. 
+                                                      Each algorithm has its own set of parameters which can be changed by user though we have already set deafult values 
+                                                      of these parameters. 
+                                  </p>
+				  <ol style="font-weight: bold">
+				  <li>Cheng and Church (CC)</li>
+				  <li>Bipartite Spectral Graph Partitioning (BSGP)</li>
+				  <li>Order Preserving Sub-matrices (OPSM)</li>
+				  <li>Iterative Search Algorithm (ISA) </li>
+				  <li>Spectral Clustering Algorithm (kSpectral)</li>
+				  <li>Information Theoretic Learning (ITL)</li>
+				  <li>xMotif </li>
+				  <li>Plaid</li>
+				  <li>FLexible Overlapped Biclustering (FLOC) </li>
+				  <li>Binary Inclusion Maximal (BiMax)</li>
+				  <li>Large Average Submatrix (LAS)</li>
+				  <li>Factor analysis for Bicluster Information Acquisition (FABIA)</li>
+				  <li>BitBit </li>
+				  <li>BiSim </li>
+				  <li>ROBA</li>
+				  <li>Modular Singular Value Decomposition Multi-Objective Evolutionary Biclustering (MSVD-MOEB)</li>
+				  <li>Qualitative Biclustering (QUBIC)</li>
+				  </ol><br>
+				
+				<li><h4>Validation</h4></li>
+				
+				  <p align="justify" style="font-size:100%;">To perform the qualitative assesment of biclusters validation indices are required.There are number of quality indices are available. At present our BIDEAL facilitates following six quality indices to measure the performace of algorithm as well as quality of Biclusters.</p><br>
+				  <ol style="font-weight: bold">
+				  <li>Jaccard Coefficient</li>
+				  <li>Chia Score (SB Score)</li>
+				  <li>Constant Variance </li>
+				  <li>Sign variance</li>
+				  <li>Hausdorff  Distance</li>
+				  <li>Mean Squared Error (MSE)</li>
+				   </ol><br>
+				
+				<li><h4>Visualization</h4></li>
+				 
+				  <p align="justify" style="font-size:100%;">Visual analysis is a quick and most intitutive way to analyze the the Bicluster results with minimal efforts. BIDEAL has an option to visualize and interpret the result which is obtained from Biclustering with different algorithms.
+                                                     Four different options are availed to user for visualization of result.</p><br>
+				  <ol>
+				  <li><strong>Plot HeatMap:</strong> BIDEAL HeatMap can be plotted by loading a particular result.</li>
+				  <li><strong>Plot Cluster:</strong> To plot the Bicluster, value, mean, median prestored results can be used. First provide the desired index of Bicluster in the edit box. Then click on the <tt>Plot Cluster</tt> for plotting. Graph can also be saved as a picture.</li>
+<li><strong>Plot Gene Profile:</strong> Gene Expression Profile can be plotted by loading a result file and giving particular Bicluster index.</li>
+<li><strong>Show Bicluster:</strong> To display Bicluster as a numerical matrix load the previously saved .mat file. Put the desired no of index of Bicluster to the edit box. Then click on “Show Bicluster”. </li></p>
+				</ol>
+              
+            </blockquote>
+			 <h3>How to use</h3>
+            <p align="justify" style="font-size:100%;">BIDEAL Toolbox is freely available for academic and research purpose under <a href="./license.html" target="blank">license.</a></p>
+			<h3><b><font style="font-family:Times New Roman">How to cite?</font></b></h3>
+					<p align="justify">Please cite the following paper:</p>
+					<p align="justify">Nishchal K. Verma , T. Sharma, S. Dixit, P. Agrawal, S. Sengupta and V. Singh, <q>BIDEAL: A Toolbox for Bicluster Analysis - Generation, Visualization and Validation</q>, arXiv preprint arXiv:2007.13737, 2020.</p>
+					<br>
+
+			</section>
+		  <br><br><br>
+        </div>
+      </div>
+
+
+    <!-- Footer
+         ================================================== -->
+    <hr>
+
+    <footer id="footer">
+      <p class="pull-right"><a href="#top">Back to top</a></p>
+
+      Copyright &copy; Intelligent Data Engineering and Automation Laboratory<br/>
+      Web fonts from <a href="http://www.google.com/webfonts">Google</a>. 
+    </footer>
+    </div><!-- /container -->
+
+
+
+
+    <!-- Le javascript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootswatch.js"></script>
+    <script src="../js/prettify.js"></script>
+    <script src="../js/lang-matlab.js"></script>
+    
+  </body>
+</html>

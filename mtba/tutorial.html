@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nishchal K. Verma: Homepage</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css">
+		<link rel="stylesheet" href="../css/style.css">
+		
+	</head>
+	
+	<div id="myheader">
+	</div>
+	
+	<body>
+
+		<div class="topnav" id="myTopnav">
+		  <a href="../index.html" ><i class="fa fa-home"></i> Home</a>
+		  <a href="experience.html">Experience</a>
+		    <a href="../researchfocus.html">Research Focus</a>
+			<a href="../people.html">People</a>
+			<a href="../publications.html">Publications</a>
+			<a href="../Booksedited.html">Books</a>
+			<a href="../projects.html">Projects</a>
+		  <div class="dropdown active">
+			<button class="dropbtn">Softwares 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="../mtba/" class="active">MTBA:MATLAB Toolbox for Biclustering Analysis</a>
+			  <a href="../finder/">Sensitive Position Finder</a>
+			  <a href="../selfoptimalclustering/">Self Optimal Clustering</a>
+			</div>
+		  </div>
+		  <a href="./datasets/">Datasets Repository</a>
+		  <div class="dropdown">
+			<button class="dropbtn">Teaching 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+			  <a href="teaching.html">Courses Taught and Designed</a>
+			  <a href="../ee658.html">EE658A</a>
+			  <a href="ee617.html">EE617A</a>
+			  <a href="ee380.html">EE380A</a>
+			</div>
+		  </div>
+		  <a href="../awards.html">Awards</a>
+		  <a href="../recognitions.html">Recognitions</a>
+		  <a href="events.html">Events</a>
+		  <a href="galleryimages.html">Gallery</a>
+		  <a href="http://iitk.ac.in/idea/IEEECIS11/" target="_blank">CIS11</a>
+		  <a href="index1.html">IDEA Lab</a>
+		  <a href="aidar.html">AIDAR Lab</a>
+		 
+		  
+		  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+
+		
+		
+		
+		<div style="padding-left:16px;padding-right:16px">
+			
+			<br>
+
+			<!-- Page Content starts here. -->
+		
+		
+			<div class="w3-container">
+				<table class="w3-table w3-striped w3-bordered w3-border w3-hoverable">
+					  <tr>
+						<td><center><h3><b><font style="font-family:Times New Roman">MTBA: A MATLAB Toolbox for Biclustering Analysis
+						<br>
+						Developers: Jayesh Kumar Gupta, Sumanik Singh , Nishchal K. Verma & Shruti Jain
+						</font></b></h3></center></td>
+					  </tr>
+				</table>
+				<br>
+				<div class="w3-container w3-full">
+					<center><img src="../img/mtba.png" alt="MTBA logo" class="img-rounded"></img></center>
+					
+					<h3><b><font style="font-family:Times New Roman">Getting started with MTBA</font></b></h3>
+					<h4><b><font style="font-family:Times New Roman">Foreword</font></b></h4>
+					<p align="justify">With MTBA, you can using state-of-the-art algorithms, 
+					with minimal effort. The toolbox targets great flexibility in the problem 
+					description and comes with advanced features. Further work still in progress: 
+					feedback and contributions are welcome!</p>
+					<br>
+					<h4><b><font style="font-family:Times New Roman">Downloads</font></b></h4>
+					<div>
+						<center>
+						<a href="https://drive.google.com/open?id=1Z_qYPMI5aTI1J4-r_w8c_u38dB0MtzkJ" target="_blank"><button class="w3-button w3-teal">Download Windows Version&nbsp;<i class="fa fa-cloud-download" style="font-size:24px"></i></button></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://drive.google.com/open?id=1URwfOw9PznoSj3vlokqibSm17-CIEUmF" target="_blank"><button class="w3-button w3-teal">Download Linux Version&nbsp;<i class="fa fa-cloud-download" style="font-size:24px"></i></button></a>
+						</center>
+					</div>
+					<br>
+					<p align="justify">The current version is 1.2 and was packaged on June 30, 2015. The file is less than Mb.</p>
+					<p align="justify"><b>Install</b></p>
+					<p align="justify">1. Unzip and copy the whole mtba directory 
+					you just downloaded in a location of your choice on disk, say, in /my/directory/.<br>
+					Add /my/directory/mtba/ to the Matlab path, either by 
+					typing addpath('/my/directory/mtba/') at the command prompt, 
+					or through the menu File » Set Path... » Add Folder.... Save the 
+					path if you would like Matlab to remember this.</p>
+					<p align="justify"><b>Example</b></p>
+					<p align="justify">The easiest way to use MTBA is to call the 
+					biclust function, with the two-dimensional data matrix and the method name:<br>
+					data = load('yeast.dat'); % load matrix<br>
+					result = biclust(data, 'cc'); % apply Cheng & Church Algorithm with default parameters</p>
+					
+				</div>
+				  
+			</div>
+			
+				
+			<!-- Page Content ends here. -->
+			
+		</div>
+
+		<!-- Footer -->
+		<br>
+		<hr>
+		<br>
+		<footer class="w3-container w3-padding-16 w3-black">
+		<p>IDEA Lab - All Rights Reserved.</p>
+		</footer>
+
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+				
+
+	</body>
+</html>
